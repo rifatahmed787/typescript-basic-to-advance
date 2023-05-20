@@ -14,21 +14,21 @@ class Parent {
   }
 }
 
-class Student extends Parent {
+class Students extends Parent {
   constructor(name: string, age: number, address: string) {
     super(name, age, address);
   }
 }
 
-const student1 = new Student('Mr.X',15,'Uganda');
-student1.
+const student1 = new Students("Mr.X", 15, "Uganda");
+student1;
 
 class Teacher extends Parent {
-   designation: string
+  designation: string;
 
   constructor(name: string, age: number, address: string, designation: string) {
-     super(name,age,address)
-     this.designation = designation;
+    super(name, age, address);
+    this.designation = designation;
   }
 
   takeClasses(numOfClass: number): string {
